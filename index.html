@@ -21,12 +21,16 @@
       Building secure, observable, and resilient systems. Portfolio currently in progress.
     </p>
 
-    <a href="#resume-request" class="btn">Request Resume Access</a>
+    <!-- Resume Request Button -->
+    <a href="#resume-request" class="btn" id="requestBtn">Request Resume Access</a>
 
-    <!-- Social Icons -->
+    <!-- Social Icons (Proper Order) -->
     <div class="socials">
       <a href="https://www.linkedin.com/in/yashgurao" target="_blank" class="icon linkedin">
         <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.facebook.com/YOUR-FACEBOOK" target="_blank" class="icon facebook">
+        <i class="fab fa-facebook-f"></i>
       </a>
       <a href="https://www.instagram.com/yash.gurao" target="_blank" class="icon instagram">
         <i class="fab fa-instagram"></i>
@@ -44,7 +48,27 @@
   <section id="resume-request" class="section">
     <h3>Request Resume Access</h3>
     <p>Resume access is shared upon request for professional purposes.</p>
+
+    <!-- Minimal working Form (Formspree) -->
+    <form action="https://formspree.io/f/abcdwxyz" method="POST" class="resume-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="company" placeholder="Company / Organization">
+      <textarea name="message" placeholder="Reason for requesting resume" required></textarea>
+      <button type="submit" id="submitBtn">Submit Request</button>
+    </form>
   </section>
+
+  <!-- JS to change button text on submit -->
+  <script>
+    const submitBtn = document.getElementById('submitBtn');
+    const form = document.querySelector('.resume-form');
+
+    form.addEventListener('submit', () => {
+      submitBtn.textContent = "Requested ✔";
+      submitBtn.disabled = true;
+    });
+  </script>
 
 </body>
 </html>
