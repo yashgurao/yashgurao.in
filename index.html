@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -19,7 +18,6 @@
       Building secure, observable, and resilient systems. Portfolio currently in progress.
     </p>
 
-    <!-- Resume Request Button -->
     <a href="#resume-request" class="btn">Request Resume Access</a>
 
     <!-- Social Icons -->
@@ -38,7 +36,7 @@
       </a>
     </div>
 
-    <!-- Email Button (separate) -->
+    <!-- Email Button -->
     <a href="mailto:iyashgurao@gmail.com" class="email-btn">
       <i class="fas fa-envelope"></i> Email Me
     </a>
@@ -62,9 +60,10 @@
     const submitBtn = document.getElementById('submitBtn');
     const form = document.querySelector('.resume-form');
 
-    form.addEventListener('submit', () => {
+    form.addEventListener('submit', function () {
       submitBtn.textContent = "Requested ✔";
       submitBtn.disabled = true;
+      alert("Request sent to Yash. Resume will be shared after approval.");
     });
   </script>
 
