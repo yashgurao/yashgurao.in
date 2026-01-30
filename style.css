@@ -79,9 +79,36 @@ h2 {
 
 /* Brand hover colors */
 .linkedin:hover { background: #0a66c2; }
+.facebook:hover { background: #1877f2; }
 .instagram:hover { background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4); }
 .youtube:hover { background: #ff0000; }
 .email:hover { background: #38bdf8; }
+
+/* Resume Form */
+.resume-form {
+  margin-top: 25px;
+}
+
+.resume-form input,
+.resume-form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 8px auto;
+  display: block;
+  border-radius: 6px;
+  border: none;
+}
+
+.resume-form button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
 
 /* Resume Section */
 .section {
