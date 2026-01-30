@@ -1,41 +1,91 @@
+/* Background & Base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   text-align: center;
 }
 
+/* Center Section */
 .container {
-  margin-top: 20vh;
+  margin-top: 18vh;
+  padding: 20px;
 }
 
+/* Headings */
 h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin-bottom: 10px;
 }
 
 h2 {
   font-weight: normal;
   color: #94a3b8;
+  margin-bottom: 20px;
 }
 
+/* Intro Text */
 .intro {
-  margin: 20px 0;
   color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
 }
 
+/* Button */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 26px;
   background: #38bdf8;
   color: black;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+
+/* Social Icons */
+.socials {
+  margin-top: 40px;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+}
+
+/* Brand hover colors */
+.linkedin:hover { background: #0a66c2; }
+.instagram:hover { background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4); }
+.youtube:hover { background: #ff0000; }
+.email:hover { background: #38bdf8; }
+
+/* Resume Section */
 .section {
-  margin-top: 100px;
-  padding: 40px 20px;
+  margin-top: 120px;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.03);
 }
