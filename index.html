@@ -5,10 +5,8 @@
   <title>Yash Gurao | Splunk Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -22,9 +20,9 @@
     </p>
 
     <!-- Resume Request Button -->
-    <a href="#resume-request" class="btn" id="requestBtn">Request Resume Access</a>
+    <a href="#resume-request" class="btn">Request Resume Access</a>
 
-    <!-- Social Icons (Proper Order) -->
+    <!-- Social Icons -->
     <div class="socials">
       <a href="https://www.linkedin.com/in/yashgurao" target="_blank" class="icon linkedin">
         <i class="fab fa-linkedin-in"></i>
@@ -38,10 +36,12 @@
       <a href="https://www.youtube.com/@YashGurao" target="_blank" class="icon youtube">
         <i class="fab fa-youtube"></i>
       </a>
-      <a href="mailto:iyashgurao@gmail.com" class="icon email">
-        <i class="fas fa-envelope"></i>
-      </a>
     </div>
+
+    <!-- Email Button (separate) -->
+    <a href="mailto:iyashgurao@gmail.com" class="email-btn">
+      <i class="fas fa-envelope"></i> Email Me
+    </a>
   </div>
 
   <!-- Resume Request Section -->
@@ -49,7 +49,6 @@
     <h3>Request Resume Access</h3>
     <p>Resume access is shared upon request for professional purposes.</p>
 
-    <!-- Minimal working Form (Formspree) -->
     <form action="https://formspree.io/f/abcdwxyz" method="POST" class="resume-form">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -59,7 +58,6 @@
     </form>
   </section>
 
-  <!-- JS to change button text on submit -->
   <script>
     const submitBtn = document.getElementById('submitBtn');
     const form = document.querySelector('.resume-form');
